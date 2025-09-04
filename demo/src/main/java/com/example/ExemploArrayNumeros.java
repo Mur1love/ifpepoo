@@ -6,9 +6,9 @@ public class ExemploArrayNumeros {
         
         // Maior número
         int maior = numeros[0];
-        for (int n : numeros) {
-            if (n > maior) {
-                maior = n;
+        for (int i = 0; i < numeros.length; i++) {
+            if (i > maior) {
+                maior = i;
             }
         }
         
@@ -32,6 +32,12 @@ public class ExemploArrayNumeros {
         
         System.out.println("Maior: " + maior);
         System.out.println("Menor: " + menor);
-        System.out.println("Número " + busca + (encontrado ? " encontrado!" : " não encontrado."));
+
+        if (encontrado) {
+            System.out.println("Número " + busca + " encontrado!");
+        } else {
+            System.out.println("Número " + busca + " não encontrado.");
+        }
+
     }
 }

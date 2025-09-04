@@ -25,7 +25,11 @@ public class ExemploMatrizNumeros {
 
         System.out.println("Maior número: " + maior);
         System.out.println("Menor número: " + menor);
-        System.out.println("Número " + busca + (encontrado ? " encontrado!" : " não encontrado."));
+        if (encontrado) {
+            System.out.println("Número " + busca + " encontrado!");
+        } else {
+            System.out.println("Número " + busca + " não encontrado.");
+        }
     }
 }
 
