@@ -7,15 +7,15 @@ public class ExemploArrayNumeros {
         // Maior número
         int maior = numeros[0];
         for (int i = 0; i < numeros.length; i++) {
-            if (i > maior) {
-                maior = i;
+            if (numeros[i] > maior) {
+                maior = numeros[i];
             }
         }
         
         // Menor número
         int menor = numeros[0];
         for (int i = 0; i < numeros.length; i++) {
-            if (i < menor) {
+            if (numeros[i] < menor) {
                 menor = i;
             }
         }
