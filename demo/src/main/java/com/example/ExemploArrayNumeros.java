@@ -2,7 +2,7 @@ package com.example;
 
 public class ExemploArrayNumeros {
     public static void main(String[] args) {
-        int[] numeros = {5, 12, 7, 3, 25, 8};
+        int[] numeros = {5, 12, 4, 3, 25, 8};
         
         // Maior número
         int maior = numeros[0];
@@ -24,7 +24,7 @@ public class ExemploArrayNumeros {
         int busca = 7;
         boolean encontrado = false;
         for (int i = 0; i < numeros.length; i++) {
-            if (i == busca) {
+            if (numeros[i] == busca) {
                 encontrado = true;
                 break;
             }
