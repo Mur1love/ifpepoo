@@ -37,7 +37,9 @@ public class CarroPrivate {
         return ano;
     }
     public void setAno(int ano) {
-        this.ano = ano;
+        if (ano > 0) {
+            this.ano = ano;
+        } 
     }
 
     public double getPreco() {

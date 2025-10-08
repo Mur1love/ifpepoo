@@ -6,7 +6,7 @@ public class TesteCarroPrivate {
 
         c.setMarca("Fiat");
         c.setModelo("Uno");
-        c.setAno(2020);
+        c.setAno(2000);
         c.setPreco(50000);
 
         c.mostrarInfo();

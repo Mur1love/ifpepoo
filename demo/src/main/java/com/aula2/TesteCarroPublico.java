@@ -6,11 +6,10 @@ public class TesteCarroPublico {
         CarroPublico c = new CarroPublico();
 
         // Acesso direto
+        c.ano = 2020;
         c.marca = "Fiat";
         c.modelo = "Uno";
-        c.ano = 2020;
-        c.preco = 5000; 
-
+        c.preco = 50000;
         c.mostrarInfo();
     }
     
