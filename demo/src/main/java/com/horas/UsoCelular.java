@@ -4,32 +4,27 @@ import java.util.Scanner;
 
 public class UsoCelular {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-
+        
+        Scanner ler = new Scanner(System.in);
         double horas;
         double total = 0;
         double media;
 
-        for (int dia = 1; dia <= 5; dia++) {
-            System.out.print("Digite a quantidade de horas de uso no dia " + dia + ": ");
-            horas = entrada.nextDouble();
-
-            System.out.println("Dia " + dia + ": " + horas + " horas registradas.");
-
+        for(int i = 1; i<=5; i++) {
+            System.out.println("Digite quanto de tempo de tela no dia "+ i);
+            horas = ler.nextDouble();
             total = total + horas;
         }
-
+        System.out.println("Total de horas: " + total);
         media = total / 5;
-
-        System.out.println("Total de horas de uso: " + total);
-        System.out.println("Média diária de uso: " + media + " horas");
-
-        if (media <= 3) {
-            System.out.println("Classificação: Uso controlado");
+        System.out.println("Média: "+ media);
+        if (media >= 3) {
+            System.out.println("Uso Elevado");
         } else {
-            System.out.println("Classificação: Uso elevado");
-        }
+            System.out.println("Uso moderado");
+        }       
 
-        entrada.close();
+
     }
+        
 }
